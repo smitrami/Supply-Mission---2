@@ -42,6 +42,9 @@ function setup() {
 	World.add(world, packageBody);
 
 	//Create a Ground
+	ground = Bodies.rectangle(width / 2, 650, width, 10, { isStatic: true });
+	World.add(world, ground);
+	
 	side1 = Bodies.rectangle(width / 2, 650, width, { isStatic: true });
 	World.add(world, side1);
 
